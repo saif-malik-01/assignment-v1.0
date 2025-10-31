@@ -1,5 +1,5 @@
-import FeaturesStackSection from "@/components/home/features-stack-section";
-import TestimonialSection from "@/components/home/testimonial-section";
+import FeaturesStackSection from '@/components/home/features-stack-section';
+import TestimonialSection from '@/components/home/testimonial-section';
 
 export default function Home() {
   return (

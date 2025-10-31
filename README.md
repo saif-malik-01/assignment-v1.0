@@ -6,11 +6,11 @@ A modern web application built using **Next.js**, **Tailwind CSS**, **ShadCN**, 
 
 ## 🚀 Tech Stack
 
-- **Next.js** – React framework for SSR, SSG, and powerful routing.  
-- **Tailwind CSS** – Utility-first CSS framework for fast UI development.  
-- **ShadCN/UI** – Accessible and customizable UI component library.  
-- **Framer Motion** – Animation library for smooth and elegant transitions.  
-- **ESLint** – For maintaining code quality and consistency.  
+- **Next.js** – React framework for SSR, SSG, and powerful routing.
+- **Tailwind CSS** – Utility-first CSS framework for fast UI development.
+- **ShadCN/UI** – Accessible and customizable UI component library.
+- **Framer Motion** – Animation library for smooth and elegant transitions.
+- **ESLint** – For maintaining code quality and consistency.
 - **Prettier** – For automatic code formatting.
 
 ---
@@ -31,14 +31,14 @@ assignment/
 |   ├── globals.css        # Global styling and theme variables
 │   └── [pageName]/        # Route-specific logic and files
 |
-├── lib/                   
+├── lib/
 │   ├── util.ts            # contains reusable utility functions
 │   └── fonts              # contains custom fonts configurations
 │
 ├── components/            # Centralized component directory
 │   ├── ui/                # UI elements (from ShadCN + custom components)
 │   ├── global/            # Global components used across multiple pages
-│   ├── [pageName]/        # Page-specific components (e.g., Home, Dashboard) 
+│   ├── [pageName]/        # Page-specific components (e.g., Home, Dashboard)
 │
 ├── .eslintrc.js           # ESLint configuration
 ├── .prettierrc            # Prettier configuration
@@ -46,7 +46,7 @@ assignment/
 ├── tailwind.config.js     # Tailwind setup
 └── package.json
 
-````
+```
 
 ---
 
@@ -64,7 +64,7 @@ ShadCN’s theming utilities are also integrated for consistent UI styling.
 
 ```bash
 npm install
-````
+```
 
 ### 2. Run the development server
 
@@ -94,11 +94,11 @@ npm run start
 
 ## 🧹 Best Practices
 
-* Store all images and static files under `public/`, preferably optimized in `.webp` format.
-* Keep page-specific components in their own folders inside `components/`.
-* Use `ui/` folder for shared UI elements and design primitives.
-* Maintain consistent code style using ESLint + Prettier.
-* Use motion effects sparingly and purposefully with **Framer Motion**.
+- Store all images and static files under `public/`, preferably optimized in `.webp` format.
+- Keep page-specific components in their own folders inside `components/`.
+- Use `ui/` folder for shared UI elements and design primitives.
+- Maintain consistent code style using ESLint + Prettier.
+- Use motion effects sparingly and purposefully with **Framer Motion**.
 
 ---
 

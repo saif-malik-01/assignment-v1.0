@@ -1,55 +1,38 @@
-"use client";
+'use client';
 
-import {
-  motion,
-  useScroll,
-  useTransform,
-  type Transition,
-} from "framer-motion";
-import { useRef } from "react";
+import { motion, useScroll, useTransform, type Transition } from 'framer-motion';
+import { useRef } from 'react';
 
-import GoalCard from "./goal-card";
-import TutorRelationshipCard from "./tutor-relationship-card";
-import ChatTopicCard from "./chat-topic-card";
+import GoalCard from './goal-card';
+import TutorRelationshipCard from './tutor-relationship-card';
+import ChatTopicCard from './chat-topic-card';
 
 export default function FeaturesStack() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ['start start', 'end start'],
   });
 
   const spring: Transition = {
-    type: "spring",
+    type: 'spring',
     stiffness: 120,
     damping: 20,
   };
 
-  const card1Y = useTransform(scrollYProgress, [0, 0.25], ["0%", "-120%"]);
+  const card1Y = useTransform(scrollYProgress, [0, 0.25], ['0%', '-120%']);
   const card1Scale = useTransform(scrollYProgress, [0, 0.25], [1, 0.95]);
 
-  const card2Scale = useTransform(
-    scrollYProgress,
-    [0, 0.25, 0.5],
-    [0.9, 1, 0.95]
-  );
-  const card2Y = useTransform(scrollYProgress, [0.25, 0.5], ["0%", "-120%"]);
+  const card2Scale = useTransform(scrollYProgress, [0, 0.25, 0.5], [0.9, 1, 0.95]);
+  const card2Y = useTransform(scrollYProgress, [0.25, 0.5], ['0%', '-120%']);
 
-  const card3Scale = useTransform(
-    scrollYProgress,
-    [0.25, 0.5, 0.75],
-    [0.85, 0.9, 1]
-  );
-  const card3Y = useTransform(
-    scrollYProgress,
-    [0.5, 0.65, 0.75],
-    ["0%", "0%", "0%"]
-  );
+  const card3Scale = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0.85, 0.9, 1]);
+  const card3Y = useTransform(scrollYProgress, [0.5, 0.65, 0.75], ['0%', '0%', '0%']);
 
   return (
     <section ref={ref} className="relative h-[400vh] w-full">
-      <div className="sticky top-0 h-screen w-full flex items-center justify-center">
-        <div className="relative w-[min(90vw,80rem)] h-[min(80vh,50rem)]">
+      <div className="sticky top-0 flex h-screen w-full items-center justify-center">
+        <div className="relative h-[min(80vh,50rem)] w-[min(90vw,80rem)]">
           <motion.div
             style={{ y: card3Y, scale: card3Scale }}
             transition={spring}

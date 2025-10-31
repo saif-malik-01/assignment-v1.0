@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import axiforma from "@/lib/fonts/axiforma";
-import "./globals.css";
+import type { Metadata } from 'next';
+import axiforma from '@/lib/fonts/axiforma';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Assignment - Web App",
-  description: "Created for assignment given by recruiter",
+  title: 'Assignment - Web App',
+  description: 'Created for assignment given by recruiter',
 };
 
 export default function RootLayout({
