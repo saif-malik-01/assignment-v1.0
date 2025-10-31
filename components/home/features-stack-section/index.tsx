@@ -49,7 +49,7 @@ export default function FeaturesStack() {
   return (
     <section ref={ref} className="relative h-[400vh] w-full">
       <div className="sticky top-0 h-screen w-full flex items-center justify-center">
-        <div className="relative w-[90vw] h-[75vh] md:h-[90vh] min-w-[300px]">
+        <div className="relative w-[min(90vw,80rem)] h-[min(80vh,50rem)]">
           <motion.div
             style={{ y: card3Y, scale: card3Scale }}
             transition={spring}
