@@ -20,7 +20,7 @@ export default function CardContainer({ title, description, children }: CardCont
             {description}
           </p>
         </div>
-        <div className="flex min-h-[400px] items-center rounded-4xl bg-gray-100 px-4 py-8 md:w-1/2">
+        <div className="flex min-h-80 items-center rounded-4xl bg-gray-100 px-4 py-8 md:w-1/2">
           {children}
         </div>
       </CardContent>

@@ -15,7 +15,7 @@ export default function ChatTopicCard() {
           <p className="text-primary border-b border-gray-100 pb-3 text-center text-xs font-semibold md:text-sm">
             Create your own
           </p>
-          <div className="flex flex-col gap-4 px-4 md:px-8">
+          <div className="flex flex-col gap-2 px-4 md:gap-4 md:px-8">
             <div className="flex items-center gap-3 border-b border-gray-100 pb-3">
               <User className="text-primary h-5 w-5 md:h-8 md:w-8" />
               <p className="md:text-md text-primary text-xs font-semibold">Tourist</p>
